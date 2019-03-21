@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>535</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Тестирование</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>ava.ico</normaloff>ava.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabLogin">
+       <attribute name="title">
+        <string>Авторизация</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="2" column="1">
+         <widget class="QGroupBox" name="gbLogin">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>200</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Авторизация</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Логин</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="leLogin">
+             <property name="inputMethodHints">
+              <set>Qt::ImhNone</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string>Пароль</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lePassword">
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pbLogin">
+             <property name="text">
+              <string>Войти</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>209</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>210</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="0">
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabMenu">
+       <attribute name="title">
+        <string>Меню</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>300</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Выберите тему тестирования</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="leName">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>Иванов И.И.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pbStart">
+             <property name="text">
+              <string>Начать тестирование</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QComboBox" name="cbThemeStart">
+             <item>
+              <property name="text">
+               <string>Графы</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Множества</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Булевы функции</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Логика высказываний</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Логика предикатов</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pbTheory">
+             <property name="text">
+              <string>Теория</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPushButton" name="pbExit">
+             <property name="text">
+              <string>Выход</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pbResult">
+             <property name="text">
+              <string>Таблица результатов</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabResult">
+       <attribute name="title">
+        <string>Таблица результатов</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QTableView" name="tvResult">
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pbBackMenu">
+          <property name="text">
+           <string>Назад</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabTest">
+       <attribute name="title">
+        <string>Тест</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="2">
+         <widget class="QLabel" name="lbTimer">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>00:00:00</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>410</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pbExtraExit">
+          <property name="text">
+           <string>Прервать тест</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QLabel" name="lbQuestion">
+          <property name="font">
+           <font>
+            <family>Proxima Nova</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:20pt; color:#000000; vertical-align:sub;&quot;&gt;Отношение называется отношением эквивалентности, если оно обладает свойствами&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QGroupBox" name="gbAnswer">
+          <property name="font">
+           <font>
+            <family>Proxima Nova</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="title">
+           <string>Варианты ответа</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="rb1">
+             <property name="text">
+              <string>рефлексивности, симметричности и транзитивности</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rb2">
+             <property name="text">
+              <string>рефлексивности и транзитивности</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rb3">
+             <property name="text">
+              <string>рефлексивности, тождественности и транзитивности</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="rb4">
+             <property name="text">
+              <string>антирефлексивности, антисимметричности и транзитивности</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="3">
+         <widget class="QPushButton" name="pbAnswer">
+          <property name="text">
+           <string>Ответить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabFinal">
+       <attribute name="title">
+        <string>Финал</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="topMargin">
+         <number>150</number>
+        </property>
+        <item row="5" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Время прохождения:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>400</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Вернуться в меню</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="lbFinalTime">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>00:00:00</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Вы завершили тест!&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Колличество правильных ответов: &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::RichText</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLabel" name="lbCountAnswer">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>0 / 0</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="6" column="2">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="lbFinalFIO">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAddTest">
+       <attribute name="title">
+        <string>Добавление теста</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7" rowstretch="0,0,0,1" columnstretch="2,0,1">
+        <item row="3" column="1" colspan="2">
+         <widget class="QPushButton" name="pbAddQuestion">
+          <property name="text">
+           <string>Добавить вопрос</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pbAddPath">
+          <property name="text">
+           <string>Выбрать картинку</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLineEdit" name="lePath"/>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QGroupBox" name="gbAddAnswer">
+          <property name="title">
+           <string>Варианты ответов</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="3" column="0" colspan="2">
+            <widget class="Line" name="line">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QLineEdit" name="leAdd4">
+             <property name="text">
+              <string>Четвертый вопрос</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QRadioButton" name="rbAdd3">
+             <property name="text">
+              <string>Вариант ответа №3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QRadioButton" name="rbAdd2">
+             <property name="text">
+              <string>Вариант ответа №2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QRadioButton" name="rbAdd4">
+             <property name="text">
+              <string>Вариант ответа №4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="leAdd3">
+             <property name="text">
+              <string>Третий вопрос</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="cbTypeQuestion">
+             <item>
+              <property name="text">
+               <string>Графы</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Множества</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Булевы функции</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Логика высказываний</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Логика предикатов</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="leAdd2">
+             <property name="text">
+              <string>Второй вопрос</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QRadioButton" name="rbAdd1">
+             <property name="text">
+              <string>Вариант ответа №1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Тип вопроса:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="leAdd1">
+             <property name="text">
+              <string>Первый вопрос</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLabel" name="label_5">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>или</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="leTypeQuestion"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>Тип вопроса:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="3">
+         <widget class="QLabel" name="lbSelectQuestion">
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <property name="text">
+           <string>Выберите изображение...</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pbCancel">
+          <property name="maximumSize">
+           <size>
+            <width>16666666</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Отмена</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabTheory">
+       <attribute name="title">
+        <string>Теория</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0" colspan="2">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>474</width>
+             <height>6239</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QLabel" name="lbTheory">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Графы&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Теория графов, Graphentheorie - в узком смысле - раздел дискретной математики, одна из ветвей дискретной топологии, в широком смысле - теория сетей , наука о топологических формах, сетевых моделях представления любого процесса или системы.. Основным объектом исследования этой теории являются графы. Графом называют геометрическую схему, представляющую собой систему линий, связывающих какие то заданные точки. Точки называемые вершинами, а связывающие их линии - ребрами (или дугами). Теория графов обосновывает способы построения графов, выражающих зависимости или связи в форме геометрических схем между различными единицами той или иной совокупности. Фактически теория графов есть совокупность способов топологических представлений каких-либо процессов или структур.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Многие структуры, представляющие практический интерес в логике, информатике, математике и других науках, могут быть представлены графами. Например, строение любого Интернет ресурса можно смоделировать при помощи ориентированного графа (орграф), в котором вершины — это статьи, а дуги (ориентированные рёбра) — гиперссылки. Вся сеть Интернет - тоже граф. Теория графов не обладает устоявшейся терминологией. В различных статьях под одними и теми же терминами понимаются разные вещи. Ниже приведены наиболее часто встречаемые определения.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Теория графов находит применение, например, в геоинформационных системах (ГИС). Существующие или вновь проектируемые дома, сооружения, кварталы и т. п. рассматриваются как вершины, а соединяющие их дороги, инженерные сети, линии электропередачи и т. п. — как рёбра. Применение различных вычислений, производимых на таком графе, позволяет, например, найти кратчайший объездной путь или ближайший продуктовый магазин, спланировать оптимальный маршрут.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Теория графов содержит большое количество нерешённых проблем и пока не доказанных гипотез.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Граф в математической теории графов и информатике - это совокупность непустого множества объектов - вершин и связей между ними. Объекты представляются как вершины, или узлы графа, а связи - как дуги, или рёбра. Для разных областей применения виды графов могут различаться направленностью, ограничениями на количество связей и дополнительными данными о вершинах или рёбрах.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Неориентированный граф, G-граф - это упорядоченная пара G := (V, E), для которой выполнены следующие условия:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;V - это непустое множество вершин, или узлов,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;E - это множество пар (в случае неориентированного графа - неупорядоченных) вершин, называемых рёбрами.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;V (а значит и, E, иначе оно было бы мультимножеством) обычно считаются конечными множествами. Многие хорошие результаты, полученные для конечных графов, неверны (или каким-либо образом отличаются) для бесконечных графов. Это происходит потому, что ряд соображений становится ложным в случае бесконечных множеств.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Вершины и рёбра графа называются также элементами графа.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Порядок графа - это число вершин в графе |V|.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Размер графа - это число его рёбер |E|&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Концевые вершины графа - это вершины, соединяющие данное множество ребер. Две концевые вершины одного и того же ребра называются соседними.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Два ребра называются смежными, если они имеют общую концевую вершину.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Два ребра называются кратными, если множества их концевых вершин совпадают.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Ребро называется петлёй, если его концы совпадают, то есть e=\{v,v\}.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Степенью вершины V называют количество инцидентных ей рёбер (при этом петли считают дважды).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Вершина называется изолированной, если она не является концом ни для одного ребра; висячей (или листом), если она является концом ровно одного ребра.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Ориентированный граф (сокращённо орграф) G — это упорядоченная пара G := (V, A), для которой выполнены следующие условия:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;V — это непустое множество вершин или узлов,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;A — это множество (упорядоченных) пар различных вершин, называемых дугами или ориентированными рёбрами.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Дуга — это упорядоченная пара вершин (v, w), где вершину v называют началом, а w — концом дуги. Можно сказать, что дуга v \to w ведёт от вершины v к вершине w.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Смешанный G-граф - это граф, в котором некоторые рёбра могут быть ориентированными, а некоторые - неориентированными. Записывается упорядоченной тройкой G := (V, E, A), где V, E и A определены так же, как выше.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Ориентированный и неориентированный графы являются частными случаями смешанного.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Изоморфный граф - это некоторый граф G, для которого существует биекция f из множества вершин графа G в множество вершин другого графа H, которому он изоморфен, обладающая следующим свойством: если в графе G есть ребро из вершины A в вершину B, то в графе H должно быть ребро из вершины f(A) в вершину f(B) и наоборот - если в графе H есть ребро из вершины A в вершину B, то в графе G должно быть ребро из вершины f^{-1}(A) в вершину f^{-1}(B). В случае ориентированного графа эта биекция также должна сохранять ориентацию ребра. В случае взвешенного графа биекция также должна сохранять вес ребра.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Множества&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Понятие множества является одним из основных неопределяемых понятий математики и служит для описания совокупности предметов или объектов. Эти объекты, или элементы множества, считаются отличимыми друг от друга и от объектов, не входящих в данное множество.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Элементы множества могут находиться в некоторых отношениях как между собой, так и с элементами других множеств. Отношение считается заданным, если для любого элемента (или множества) X и элемента (или множества) Y указано, связаны они этим отношением или нет.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Отношение принадлежности . Тот факт, что объект a является элементом множества A, словесно выражается так: элемент a принадлежит множеству A. Обозначение: aA. Отрицание этого факта выражается другим отношением: элемент a не принадлежит множеству A. Обозначение: aA.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Например: «точка C принадлежит отрезку AB» записывается так: C[AB].&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Отношение включения. Говорят, что множество B включено во множество A, если каждый элемент B принадлежит A. Обозначение: BA.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Подмножеством множества A называется всякое множество B, удовлетворяющее условию BA.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Например: отрезок AB, лежащий на прямой a, включен в прямую a и является таким образом его подмножеством. [AB]a.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Для любого множества A справедливо включение AA.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Множество, не содержащее ни одного элемента, называется пустым множеством. Обозначение: .&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Пустое множество считается подмножеством любого множества.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Множества A и называются несобственными подмножествами множества A. Все остальные подмножества множества A, если они существуют, – собственные подмножества A.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Нередко бывает так, что рассматривают только подмножества одного и того же множества U. Такое множество называют универсальным.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Множество можно задать, перечислив все его элементы. Так, если a, b, c, d – обозначения различных объектов, то множество A этих объектов записывают как A = {a; b; c; d}.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Указанный способ применим только для конечных множеств, да и то при условии, что число элементов невелико. Другой способ задания множеств состоит в следующем: формулируют характеристическое свойство элементов множества, т.е. свойство, которым обладают все элементы данного множества и только они. Множество, для элементов которого указано характеристическое свойство, в фигурных скобках сначала пишется обозначение элемента, затем проводится вертикальная черта, после которой пишется характеристическое свойство элементов. Например, множество M натуральных чисел, меньших 6, запишется так:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Два множества A и B равны, если одновременно справедливы AB и BA или если множества A и B состоят из одних и тех же элементов. Обозначение: A = B.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:16pt; font-weight:600; color:#000000;&quot;&gt;Алгебра логики&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Алгебра логики (англ. algebra of logic) — один из основных разделов математической логики, в котором методы алгебры используются в логических преобразованиях.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Основоположником алгебры логики является английский математик и логик Дж. Буль (1815–1864), положивший в основу своего логического учения аналогию между алгеброй и логикой. Любое высказывание он записывал с помощью символов разработанного им языка и получал «уравнения», истинность или ложность которых можно было доказать, исходя из определенных логических законов, таких как законы коммутативности, дистрибутивности, ассоциативности и др.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Современная алгебра логики является разделом математической логики и изучает логические операции над высказываниями с точки зрения их истинностного значения (истина, ложь). Высказывания могут быть истинными, ложными или содержать истину и ложь в разных соотношениях.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Логическое высказывание — это любое повествовательное предложение, в отношении которого можно однозначно утверждать, что его содержание истинно или ложно.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Например, «3 умножить на 3 равно 9», «Архангельск севернее Вологды» — истинные высказывания, а «Пять меньше трех», «Марс — звезда» — ложные.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Очевидно, что не всякое предложение может быть логическим высказыванием, т. к. не всегда есть смысл говорить о его ложности или истинности. Например, высказывание «Информатика — интересный предмет» неопределенно и требует дополнительных сведений, а высказывание «Для ученика 10-А класса Иванова А. А. информатика — интересный предмет» в зависимости от интересов Иванова А. А. может принимать значение «истина» или «ложь».&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Кроме двузначной алгебры высказываний, в которой принимаются только два значения — «истинно» и «ложно», существует многозначная алгебра высказываний. В такой алгебре, кроме значений «истинно» и «ложно», употребляются такие истинностные значения, как «вероятно», «возможно», «невозможно» и т. д.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;В алгебре логики различаются простые (элементарные) высказывания, обозначаемые латинскими буквами (A, B, C, D, …), и сложные (составные), составленные из нескольких простых с помощью логических связок, например таких, как «не», «и», «или», «тогда и только тогда», «если … то». Истинность или ложность получаемых таким образом сложных высказываний определяется значением простых высказываний.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Обозначим как А высказывание «Алгебра логики успешно применяется в теории электрических схем», а через В — «Алгебра логики применяется при синтезе релейно-контактных схем».&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Тогда составное высказывание «Алгебра логики успешно применяется в теории электрических цепей и при синтезе релейно-контактных схем» можно кратко записать как А и В; здесь «и» — логическая связка. Очевидно, что поскольку элементарные высказывания А и В истинны, то истинно и составное высказывание А и В.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Каждая логическая связка рассматривается как операция над логическими высказываниями и имеет свое название и обозначение.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;Логических значений всего два: истина (TRUE) и ложь (FALSE). Это соответствует цифровому представлению — 1 и 0. Результаты каждой логической операции можно записать в виде таблицы. Такие таблицы называют таблицами истинности.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:14pt; font-weight:600; color:#000000;&quot;&gt;Основные операции алгебры логики:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;1. Логическое отрицание, инверсия (лат. inversion — переворачивание) — логическая операция, в результате которой из данного высказывания (например, А) получается новое высказывание (не А), которое называется отрицанием исходного высказывания, обозначается символически чертой сверху (A−) или такими условными обозначениями, как ¬, 'not', и читается: «не А», «А ложно», «неверно, что А», «отрицание А». Например, «Марс — планета Солнечной системы» (высказывание А); «Марс — не планета Солнечной системы» (A−); высказывание «10 — простое число» (высказывание В) ложно; высказывание «10 — не простое число» (высказывание B ) истинно.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;2. Конъюнкция (лат. conjunctio — соединение) — логическое умножение, операция, требующая как минимум двух логических величин (операндов) и соединяющая два или более высказываний при помощи связки «и» (например, «А и В»), которая символически обозначается с помощью знака ∧ (А ∧ В) и читается: «А и В». Для обозначения конъюнкции применяются также следующие знаки: А ∙ В; А &amp;amp; В, А and В, а иногда между высказываниями не ставится никакого знака: АВ. Пример логического умножения: «Этот треугольник равнобедренный и прямоугольный». Данное высказывание может быть истинным только в том случае, если выполняются оба условия, в противном случае высказывание ложно.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;3. Дизъюнкция (лат. disjunction — разделение) — логическое сложение, операция, соединяющая два или более высказываний при помощи связки «или» (например, «А или В»), которая символически обозначается с помощью знака ∨ (А ∨ В) и читается: «А или В». Для обозначения дизъюнкции применяются также следующие знаки: А + В; А or В; А | B. Пример логического сложения: «Число x делится на 3 или на 5». Это высказывание будет истинным, если выполняются оба условия или хотя бы одно из условий.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;4. Дизъюнкция строго-разделительная, сложение по модулю два — логическая операция, соединяющая два высказывания при помощи связки «или», употребленной в исключающем смысле, которая символически обозначается с помощью знаков ∨ ∨ или ⊕ (А ∨ ∨ В, А ⊕ В) и читается: «либо А, либо В». Пример сложения по модулю два — высказывание «Этот треугольник тупоугольный или остроугольный». Высказывание истинно, если выполняется какое-то одно из условий.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;5. Импликация (лат. implisito — тесно связываю) — логическая операция, соединяющая два высказывания при помощи связки «если..., то» в сложное высказывание, которое символически обозначается с помощью знака → (А → В) и читается: «если А, то В», «А влечет В», «из А следует В», «А имплицирует В». Для обозначения импликации применяется также знак ⊃ (A ⊃ B). Пример импликации: «Если полученный четырехугольник квадрат, то около него можно описать окружность». Эта операция связывает два простых логических выражения, из которых первое является условием, а второе — следствием. Результат операции ложен только тогда, когда предпосылка есть истина, а следствие — ложь. Например, «Если 3 * 3 = 9 (А), то Солнце — планета (В)», результат импликации А → В — ложь.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-family:'Times New Roman'; font-size:12pt; color:#000000;&quot;&gt;6. Эквивалентность, двойная импликация, равнозначность (лат. aequalis — равный и valentis — имеющий силу) — логическая операция, позволяющая из двух высказываний А и В получить новое высказывание А ≡ В, которое читается: «А эквивалентно B». Для обозначения эквивалентности применяются также следующие знаки: ⇔, ∼. Эта операция может быть выражена связками «тогда и только тогда», «необходимо и достаточно», «равносильно». Примером эквивалентности является высказывание: «Треугольник будет прямоугольным тогда и только тогда, когда один из углов равен 90 градусам».&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="textFormat">
+               <enum>Qt::RichText</enum>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QPushButton" name="pbBackTheory">
+          <property name="text">
+           <string>Назад</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAdmin">
+       <attribute name="title">
+        <string>Панель администратора</string>
+       </attribute>
+       <widget class="QGroupBox" name="gbAdmin">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>150</y>
+          <width>251</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Панель админа</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="0" column="0">
+          <widget class="QComboBox" name="cbSelectTheme">
+           <item>
+            <property name="text">
+             <string>Графы</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Множества</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Булевы функции</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Логика высказываний</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Логика предикатов</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pbAddTest">
+           <property name="text">
+            <string>Добавить тест</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pbAddTheory">
+           <property name="text">
+            <string>Добавить теорию</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pbExitAdmin">
+           <property name="text">
+            <string>Выход</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pbDeleteTheme">
+           <property name="text">
+            <string>Удалить тему</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
